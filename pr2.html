@@ -1,73 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 24px
-        }
-
-        .form-input {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        input[type=submit] {
-            width: 100%;
-            height: 30px;
-            background-color: #AAFFCC;
-        }
-
-            input[type=submit]:hover {
-                cursor: pointer;
-                background-color: #0CFF00;
-            }
-
-            input[type=submit]:active {
-                background-color: #000;
-            }
-    </style>
 </head>
 <body>
-    <div class="container">
+    
         <h1>Registration form</h1>
         <form>
             <div class="form-input">
-                <label for="name-input">Enter your name</label>
+                <label for="name-input">Enter name/login:</label>
                 <input type="text" id="name-input" placeholder="Name" />
             </div>
             <div class="form-input">
-                <label for="password-input">Enter your name</label>
-                <input type="password" id="password-input" placeholder="Name" />
+                <label for="password-input">Enter password:</label>
+                <input type="password" id="password-input" placeholder="Your password" />
             </div>
             <div class="form-input">
-                <label for="user-type-input">Select user type</label>
+                <label for="user-type-input">Choose who you are:</label>
                 <select id="user-type-input">
-                    <option value="Admin">Admin</option>
-                    <option value="Moderator">Moderator</option>
-                    <option value="User">User</option>
+                    <option value="Player">Player</option>
+                    <option value="developer">Developer</option>
+
                 </select>
             </div>
 
-            <input type="submit" value="Submit form" />
+                <input type="submit" value="Sign up" class="button" />
         </form>
-    </div>
+   
 </body>
 </html>
