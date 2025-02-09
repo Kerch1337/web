@@ -1,11 +1,42 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
 </head>
 <body>
+    <button class="button" id="theme" onclick="toggleTheme()">Dark/light</button>
+    <h1>Registration form</h1>
+    <form>
+        <div class="form-input">
+            <label for="name-input">Enter name/login:</label>
+            <input type="text" id="name-input" placeholder="Name" />
+        </div>
+        <div class="form-input">
+            <label for="password-input">Enter password:</label>
+            <input type="password" id="password-input" placeholder="Your password" />
+        </div>
+        <div class="form-input">
+            <label for="user-type-input">Choose who you are:</label>
+            <select id="user-type-input">
+                <option value="Player">Player</option>
+                <option value="developer">Developer</option>
 
+            </select>
+        </div>
+
+        <input type="submit" value="Sign up" class="button" />
+    </form>
+    <script type="text/javascript">
+
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('light-theme');
+        }
+
+    </script>
 </body>
 </html>
