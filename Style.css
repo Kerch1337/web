@@ -1,0 +1,72 @@
+﻿selector {
+    font: font-family font-style font-variant font-weight font-size line-height;
+}
+
+html {
+    font-family: 'Arial';
+}
+
+body {
+    background-color: #262626;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-style: italic;
+}
+
+label {
+    font-size: 30px;
+    text-align: center;
+    color: #D1D1D1;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #6D6D6D;
+}
+
+.button {
+    color: #D1D1D1;
+    width: 7%;
+    height: 25px;
+    background-color: #545454;
+    border-radius: 10px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px
+}
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.light-theme h1 {
+    color: black;
+    text-shadow: none;
+}
+
+body.light-theme label {
+    color: black;
+}
+
+body.light-theme .button {
+    background-color: lightgrey;
+    color: black;
+}
