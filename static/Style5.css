@@ -52,21 +52,22 @@ input[type=submit]:hover {
     justify-content: center;
     gap: 7px
 }
+
 body.light-theme {
     background-color: white;
     color: black;
 }
 
-body.light-theme h1 {
-    color: black;
-    text-shadow: none;
-}
+    body.light-theme h1 {
+        color: black;
+        text-shadow: none;
+    }
 
-body.light-theme label {
-    color: black;
-}
+    body.light-theme label {
+        color: black;
+    }
 
-body.light-theme .button {
-    background-color: lightgrey;
-    color: black;
-}
+    body.light-theme .button {
+        background-color: lightgrey;
+        color: black;
+    }
