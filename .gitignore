@@ -4,3 +4,9 @@
 
 /node_modules
 /.vs
+/README.md
+/package.json
+/package-lock.json
+/index.js
+/data.txt
+/.gitignore
