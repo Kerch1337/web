@@ -1,0 +1,21 @@
+.container {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.links{
+    color: black;
+    margin-left: 15px;
+}
+
+.links:hover {
+    color: red;
+}
+
+.head{
+    font-weight: normal;
+}
