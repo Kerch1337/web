@@ -1,5 +1,5 @@
 .container {
-    width: 70vw;
+    width: 920px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -18,4 +18,8 @@
 
 .head{
     font-weight: normal;
+}
+
+.line {
+    margin-left: 490px;
 }
