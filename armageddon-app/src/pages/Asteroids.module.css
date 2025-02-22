@@ -1,0 +1,69 @@
+.container {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.checkbox {
+    /* Показать только опасные */
+
+    position: absolute;
+    width: 196px;
+    height: 20px;
+    left: 490px;
+    top: 150px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #000000;
+}
+
+.distancemode {
+    /* Расстояние в километрах, в дистанциях до луны */
+
+    position: absolute;
+    width: 379px;
+    height: 20px;
+    left: 1075px;
+    top: 150px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    color: #000000;
+}
+
+.buttons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.buttonsSelected {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.buttons:hover {
+    color: grey;
+}
