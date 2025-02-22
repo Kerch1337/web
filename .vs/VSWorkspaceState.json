@@ -4,8 +4,9 @@
     "\\armageddon-app",
     "\\armageddon-app\\src",
     "\\armageddon-app\\src\\components",
-    "\\armageddon-app\\src\\components\\header"
+    "\\armageddon-app\\src\\components\\AsteroidCard",
+    "\\armageddon-app\\src\\components\\card"
   ],
-  "SelectedNode": "\\armageddon-app\\src\\components\\header\\Header.module.css",
+  "SelectedNode": "\\armageddon-app\\src\\index.js",
   "PreviewInSolutionExplorer": false
 }

@@ -3,7 +3,7 @@ import Dino from "./dino.svg";
 import Aster from "./aster.svg";
 
 export const AsteroidCard = (props) => {
-    console.log("Internal component rendered")
+   
      const {name, date, distance, size,  isDangerous, distanceMode} = props;
    
     return <div>
@@ -25,7 +25,7 @@ const CardContent = (props) => {
                <div className={styles.name}>{name}</div>
                <div className={styles.info}>
                    <div className={styles.text}>{'Дата: ' + date}</div>
-                   <div className={styles.text}>{'Расстояние: '+ (distanceMode ? (distance/384000).toFixed(2) : distance) +' км'}</div>
+            <div className={styles.text}>{'Расстояние: ' + (distanceMode ? (distance.lunar / 1).toFixed(2) + ' раз до луны' : (distance.kilometers / 1).toFixed(2) + ' км')}</div>
                    <div className={styles.text}>{'Размер: '+ size +' м'}</div>
                </div>
          </div>
