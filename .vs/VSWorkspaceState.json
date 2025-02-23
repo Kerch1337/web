@@ -4,9 +4,8 @@
     "\\armageddon-app",
     "\\armageddon-app\\src",
     "\\armageddon-app\\src\\components",
-    "\\armageddon-app\\src\\components\\AsteroidCard",
-    "\\armageddon-app\\src\\components\\card"
+    "\\armageddon-app\\src\\pages"
   ],
-  "SelectedNode": "\\armageddon-app\\src\\index.js",
+  "SelectedNode": "\\armageddon-app\\src\\pages\\Asteroids.tsx",
   "PreviewInSolutionExplorer": false
 }

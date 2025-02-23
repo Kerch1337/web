@@ -1,8 +1,35 @@
-import styles from "./AsteroidCard.module.css";
 import Dino from "./dino.svg";
 import Aster from "./aster.svg";
+import styles from "./AsteroidCard.module.css";
 
-export const AsteroidCard = (props) => {
+type AsteroidCardProps = {
+    name: string;
+    date: string;
+    distance: {
+        kilometers: number;
+        lunar: number;
+    };
+    size: number;
+    isDangerous: boolean;
+    distanceMode: boolean
+}
+
+type CardContentProps = {
+     name: string;
+    date: string;
+    distance: {
+        kilometers: number;
+        lunar: number;
+    };
+    size: number;
+    distanceMode: boolean
+}
+
+type CardActionProps = {
+    isDangerous: boolean;
+}
+
+export const AsteroidCard = (props: AsteroidCardProps) => {
    
      const {name, date, distance, size,  isDangerous, distanceMode} = props;
    
@@ -17,7 +44,7 @@ export const AsteroidCard = (props) => {
     </div>
 }
 
-const CardContent = (props) => {
+const CardContent = (props: CardContentProps) => {
 
     const {name, date, distance, size} = props;
     const distanceMode = props.distanceMode;
@@ -26,12 +53,14 @@ const CardContent = (props) => {
                <div className={styles.info}>
                    <div className={styles.text}>{'Дата: ' + date}</div>
             <div className={styles.text}>{'Расстояние: ' + (distanceMode ? (distance.lunar / 1).toFixed(2) + ' раз до луны' : (distance.kilometers / 1).toFixed(2) + ' км')}</div>
-                   <div className={styles.text}>{'Размер: '+ size +' м'}</div>
+                   <div className={styles.text}>{'Размер: '+ size.toFixed(2) +' м'}</div>
                </div>
          </div>
 }
 
-const CardAction = ({isDangerous}) => {
+const CardAction = (props: CardActionProps) => {
+     const {isDangerous} = props;
+
     return <div>
                <div className={styles.danger}>{'Оценка: ' + (isDangerous ? 'опасен': 'не опасен')}</div>
                <button className={styles.buttons}>На уничтожение</button>

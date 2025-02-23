@@ -6,9 +6,19 @@ import {AsteroidCard} from "../components/AsteroidCard/AsteroidCard";
 
 export const Asteroids = () => {
 
-    const [asteroids, setAsteroids] = useState([]);
-    const [onlyDangerous, setOnlyDangerous] = useState(false);
-    const [distanceMode, setDistanceMode] = useState(false);
+    const [asteroids, setAsteroids] = useState<{
+        name: string;
+        date: string;
+        size: number;
+        distance: {
+            kilometers: number;
+            lunar: number;
+        };
+        isDangerous: boolean;
+        id: string;
+    }[]>([]);
+    const [onlyDangerous, setOnlyDangerous] = useState<boolean>(false);
+    const [distanceMode, setDistanceMode] = useState<boolean>(false);
 
     useEffect( () => {
         try {
@@ -20,7 +30,7 @@ export const Asteroids = () => {
                     rawAsteroids = rawAsteroids.concat(response.near_earth_objects[data])
                 }
                 const asteroids = rawAsteroids.map(item => {
-                    const size = ((item.estimated_diameter.meters.estimated_diameter_max + item.estimated_diameter.meters.estimated_diameter_min) / 2).toFixed(2);
+                    const size = ((item.estimated_diameter.meters.estimated_diameter_max + item.estimated_diameter.meters.estimated_diameter_min) / 2);
                     const close = item.close_approach_data[0]
 
                     return {
@@ -46,7 +56,7 @@ export const Asteroids = () => {
     return <div>
         <Header />
         <div className={styles.checkbox} ><input type="checkbox"
-        name="a" value={onlyDangerous} onChange={()=>setOnlyDangerous(!onlyDangerous)}/> Показать только опасные</div>
+        name="a" value={onlyDangerous as unknown as string} onChange={()=>setOnlyDangerous(!onlyDangerous)}/> Показать только опасные</div>
         <div className={styles.distancemode}>
             Расстояние <button className={distanceMode ? styles.buttons :styles.buttonsSelected} onClick={()=>setDistanceMode(false)}>в километрах</button>,
             <button className={distanceMode ? styles.buttonsSelected :styles.buttons} onClick={()=>setDistanceMode(true)}>в дистанциях до луны</button>
