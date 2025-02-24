@@ -1,9 +1,9 @@
-.card1, .card2 {
-
+.card1,
+.card2 {
     box-sizing: border-box;
     width: 920px;
     height: 200px;
-    background: linear-gradient(90deg, #CFF37D 0%, #7DE88C 100%);
+    background: linear-gradient(90deg, #cff37d 0%, #7de88c 100%);
     border: 1px solid #000000;
     border-radius: 10px;
     position: relative;
@@ -11,7 +11,7 @@
 }
 
 .card2 {
-    background: linear-gradient(90deg, #FFB199 0%, #FF0844 100%);
+    background: linear-gradient(90deg, #ffb199 0%, #ff0844 100%);
 }
 
 .buttons {
@@ -28,7 +28,7 @@
     left: 738px;
     top: 96px;
     /* Blue Base */
-    background: #186DD6;
+    background: #186dd6;
     border-radius: 24px;
     color: white;
     text-align: center;
@@ -36,8 +36,8 @@
 }
 
 .danger {
-    /* Оценка:
-не опасен */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅ:
+пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
 
     position: absolute;
     width: 80px;

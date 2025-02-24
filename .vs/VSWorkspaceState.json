@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\armageddon-app",
-    "\\armageddon-app\\src",
-    "\\armageddon-app\\src\\components",
-    "\\armageddon-app\\src\\pages"
+    "\\armageddon-app\\src\\button"
   ],
-  "SelectedNode": "\\armageddon-app\\src\\pages\\Asteroids.tsx",
+  "SelectedNode": "\\armageddon-app\\src",
   "PreviewInSolutionExplorer": false
 }
