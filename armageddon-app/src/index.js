@@ -1,4 +1,6 @@
 import React from 'react'
+import { createContext } from 'react'
+import { AsteroidsContextProvider } from './components/asteroids-context/AsteroidsContext'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
@@ -30,6 +32,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <AsteroidsContextProvider>
+            <RouterProvider router={router} />
+        </AsteroidsContextProvider>
     </React.StrictMode>
 )

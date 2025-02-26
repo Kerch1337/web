@@ -1,6 +1,7 @@
 import Dino from './dino.svg'
 import Aster from './aster.svg'
 import styles from './AsteroidCard.module.css'
+import {AsteroidCardContentContainer} from './AsteroidCardContentContainer'
 
 type AsteroidCardProps = {
     name: string
@@ -11,7 +12,6 @@ type AsteroidCardProps = {
     }
     size: number
     isDangerous: boolean
-    distanceMode: boolean
 }
 
 type CardContentProps = {
@@ -30,19 +30,19 @@ type CardActionProps = {
 }
 
 export const AsteroidCard = (props: AsteroidCardProps) => {
-    const { name, date, distance, size, isDangerous, distanceMode } = props
+    const { name, date, distance, size, isDangerous } = props
+
 
     return (
         <div>
             <div className={isDangerous ? styles.card2 : styles.card1}>
                 <img src={Dino} alt="Динозавр" className={styles.dinosaur} />
                 <img src={Aster} alt="Астероид" className={styles.asteroid} />
-                <CardContent
+                <AsteroidCardContentContainer
                     name={name}
                     date={date}
                     distance={distance}
                     size={size}
-                    distanceMode={distanceMode}
                 />
                 <CardAction isDangerous={isDangerous} />
             </div>
@@ -50,9 +50,10 @@ export const AsteroidCard = (props: AsteroidCardProps) => {
     )
 }
 
-const CardContent = (props: CardContentProps) => {
-    const { name, date, distance, size } = props
-    const distanceMode = props.distanceMode
+export const CardContent = (props: CardContentProps) => {
+    const { name, date, distance, size, distanceMode } = props
+    
+
     return (
         <div>
             <div className={styles.name}>{name}</div>

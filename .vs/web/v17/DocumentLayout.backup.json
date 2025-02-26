@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\korne\\source\\repos\\web\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\pages\\Asteroids.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:armageddon-app\\src\\pages\\Asteroids.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\components\\AsteroidCard\\AsteroidCard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:armageddon-app\\src\\components\\AsteroidCard\\AsteroidCard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\components\\asteroids-context\\AsteroidsContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:armageddon-app\\src\\components\\asteroids-context\\AsteroidsContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:armageddon-app\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsteroidsContext.tsx",
+              "DocumentMoniker": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\components\\asteroids-context\\AsteroidsContext.tsx",
+              "RelativeDocumentMoniker": "armageddon-app\\src\\components\\asteroids-context\\AsteroidsContext.tsx",
+              "ToolTip": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\components\\asteroids-context\\AsteroidsContext.tsx",
+              "RelativeToolTip": "armageddon-app\\src\\components\\asteroids-context\\AsteroidsContext.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-02-25T23:05:43.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\index.js",
+              "RelativeDocumentMoniker": "armageddon-app\\src\\index.js",
+              "ToolTip": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\index.js",
+              "RelativeToolTip": "armageddon-app\\src\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-25T22:38:48.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AsteroidCard.tsx",
+              "DocumentMoniker": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\components\\AsteroidCard\\AsteroidCard.tsx",
+              "RelativeDocumentMoniker": "armageddon-app\\src\\components\\AsteroidCard\\AsteroidCard.tsx",
+              "ToolTip": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\components\\AsteroidCard\\AsteroidCard.tsx",
+              "RelativeToolTip": "armageddon-app\\src\\components\\AsteroidCard\\AsteroidCard.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-02-25T22:36:38.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Asteroids.tsx",
+              "DocumentMoniker": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\pages\\Asteroids.tsx",
+              "RelativeDocumentMoniker": "armageddon-app\\src\\pages\\Asteroids.tsx",
+              "ToolTip": "C:\\Users\\korne\\source\\repos\\web\\armageddon-app\\src\\pages\\Asteroids.tsx",
+              "RelativeToolTip": "armageddon-app\\src\\pages\\Asteroids.tsx",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-02-25T22:30:15.206Z",
+              "EditorCaption": ""
             }
           ]
         }
