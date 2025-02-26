@@ -35,6 +35,27 @@
     cursor: pointer;
 }
 
+.buttons2 {
+    /* Primary Adapt Btn */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 4px;
+    position: absolute;
+    width: 158px;
+    height: 48px;
+    left: 738px;
+    top: 96px;
+    /* Blue Base */
+    background: #D10000;
+    border-radius: 24px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
 .danger {
     /* ������:
 �� ������ */

@@ -1,11 +1,8 @@
 import React from 'react'
-import { createContext } from 'react'
 import { AsteroidsContextProvider } from './components/asteroids-context/AsteroidsContext'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import App from './App'
-import reportWebVitals from './reportWebVitals'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import { Asteroids } from './pages/Asteroids'
 import { Destroyment } from './pages/Destroyment'
 import { Asteroid } from './pages/Asteroid'
@@ -26,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: '/asteroid/:id',
         element: <Asteroid />,
+    },
+    {
+        path: '*',
+        element: <Navigate to="/asteroids" replace />,
     },
 ])
 

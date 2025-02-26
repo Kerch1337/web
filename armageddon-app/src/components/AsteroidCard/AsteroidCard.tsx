@@ -2,6 +2,8 @@ import Dino from './dino.svg'
 import Aster from './aster.svg'
 import styles from './AsteroidCard.module.css'
 import {AsteroidCardContentContainer} from './AsteroidCardContentContainer'
+import { useContext } from 'react'
+import { AsteroidsContext } from '../asteroids-context/AsteroidsContext'
 
 type AsteroidCardProps = {
     name: string
@@ -25,13 +27,12 @@ type CardContentProps = {
     distanceMode: boolean
 }
 
-type CardActionProps = {
-    isDangerous: boolean
-}
-
 export const AsteroidCard = (props: AsteroidCardProps) => {
     const { name, date, distance, size, isDangerous } = props
-
+    const {addAsteroid, deleteAsteroid, destroyment} = useContext(AsteroidsContext)
+    const isSelected = (asteroid) =>{
+        return destroyment.some(item=>item.id === asteroid.id)
+    }
 
     return (
         <div>
@@ -44,7 +45,7 @@ export const AsteroidCard = (props: AsteroidCardProps) => {
                     distance={distance}
                     size={size}
                 />
-                <CardAction isDangerous={isDangerous} />
+                <CardAction isDangerous={isDangerous} is={isSelected(props)} onClick={isSelected(props)?()=>deleteAsteroid(props):()=>addAsteroid(props)}/>
             </div>
         </div>
     )
@@ -73,15 +74,16 @@ export const CardContent = (props: CardContentProps) => {
     )
 }
 
-const CardAction = (props: CardActionProps) => {
-    const { isDangerous } = props
+const CardAction = (props: {isDangerous: boolean, is: boolean, onClick: (asteroid: any)=>void}) => {
+    const { isDangerous,is, onClick } = props
+    
 
     return (
         <div>
             <div className={styles.danger}>
                 {'Оценка: ' + (isDangerous ? 'опасен' : 'не опасен')}
             </div>
-            <button className={styles.buttons}>На уничтожение</button>
+            <button className={is?styles.buttons2:styles.buttons} onClick={onClick}>{(is ? 'Уже на уничтожении' : 'На уничтожение')}</button>
         </div>
     )
 }

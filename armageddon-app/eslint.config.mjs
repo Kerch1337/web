@@ -16,15 +16,5 @@ export default [
         rules: {
             'react/react-in-jsx-scope': 'off',
         },
-    },
-    {
-        // Интеграция Prettier
-        plugins: { prettier: pluginPrettier },
-        rules: {
-            // Сообщать об ошибках форматирования как об ошибках ESLint
-            'prettier/prettier': 'error',
-        },
-    },
-    // Отключаем конфликты между ESLint и Prettier
-    configPrettier,
+    }
 ];
